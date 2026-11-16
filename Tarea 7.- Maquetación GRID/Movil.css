@@ -1,0 +1,31 @@
+/*Tablet*/
+@media (max-width: 1024px) {
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titulo h2 { 
+    font-size: 40px; 
+  }
+  .personal img { 
+    height: 750px; 
+  }
+}
+
+/*celular*/
+@media (max-width: 760px) {
+  .seccion-equipo { 
+    padding: 30px 0 60px; 
+  }
+
+  .cuadricula {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .titulo h2 { 
+    font-size: 32px; 
+  }
+  .personal img { 
+    height: 900px; 
+  }
+}

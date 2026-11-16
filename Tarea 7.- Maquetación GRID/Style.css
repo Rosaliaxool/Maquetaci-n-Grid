@@ -1,0 +1,139 @@
+
+:root {
+    --gris: #f3f3f3;
+    --rosa: #ff3d6e;
+    --negro: #222;
+    --gris-texto: #777;
+    --borde: #ccc;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; padding: 0; 
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--gris);
+    color: var(--negro);
+}
+
+img { 
+    display: block; 
+    width: 100%; 
+}
+
+.ancho {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* SECCIÓN */
+.seccion-equipo { 
+    padding: 40px 0 120px; 
+}
+
+/* Título */
+.titulo { 
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+
+.etiqueta {
+    color: var(--rosa);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+.titulo h2 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+.titulo h2 strong { 
+    font-weight: bold; 
+}
+
+.linea {
+    width: 70px;
+    height: 3px;
+    background: var(--rosa);
+    margin: 15px auto 0;
+}
+
+/* GRID */
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   /* mismo ancho */
+    gap: 30px;
+}
+
+.personal {
+    background: #fff;
+    text-align: center;
+}
+
+.personal img {
+    height: 300px;
+    object-fit: cover;
+    background: #ececec;
+    filter: grayscale(0);
+    transition: all 0.5s;
+}
+
+.personal img:hover {
+  filter: grayscale(100%);    /* blanco y negro */
+}
+
+.datos { 
+    padding: 20px 15px 35px; 
+}
+
+.datos h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 10px;
+    min-height: 65px;      /* Lineas */
+    display: flex;
+    justify-content: center;
+    align-items: center;   /* el nombre al mismo nivel*/
+    transition: color 0.3s ease;
+}
+
+.cargo {
+    display: block;
+    color: var(--gris-texto);
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.datos h3:hover,
+.cargo:hover {
+    color: var(--rosa);
+}
+
+.separador {
+    border-top: 1px solid var(--borde);
+    margin: 25px 25px 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: var(--gris-texto);
+    font-size: 18px;
+}
+
+.redes i {
+    transition: color 0.3s ease;
+}
+
+.redes i:hover {
+    color: var(--rosa);
+}
